@@ -8,7 +8,7 @@ def starting_page(request):
 
 
 def posts(request):
-    return HttpResponse("post")
+    return render(request, "blog/all-posts.html")
 
 
 def post_detail(request, post):
