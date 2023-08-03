@@ -11,5 +11,5 @@ def posts(request):
     return render(request, "blog/all-posts.html")
 
 
-def post_detail(request, post):
-    return HttpResponse(post)
+def post_detail(request, slug):
+    return render(request, "blog/post-detail.html")
