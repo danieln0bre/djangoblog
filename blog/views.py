@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def starting_page(request):
-    return HttpResponse("response")
+    return render(request, 'blog/index.html')
 
 
 def posts(request):
